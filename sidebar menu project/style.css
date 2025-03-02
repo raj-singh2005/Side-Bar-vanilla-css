@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.navbar{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    background-color:#545456;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 8px black;
+    
+
+}
+.navbar h1{
+    font-weight: 800;
+    font-size: 30px;
+    margin-left: 10px;
+    border: 4px solid#C39574  ;
+    padding: 2px 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px black;
+    color: white;
+    text-shadow: 4px 4px 5px black;
+}
+.navbar p{
+    color: white;
+    margin-right: 25px;
+    font-size: 20px;
+    cursor: pointer;
+    text-shadow: 4px 4px 5px black;
+}
+#search input{
+    width: 450px;
+    height: 35px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    border: none;
+}
+#search button{
+    height:33px ;
+    font-size: 15px;
+    padding: 1px 4px ;
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+}
+#search{
+    border: 4px solid #CEB3A0;
+    padding: 7px 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px black;
+}
+#mainbox{
+    height: 100vh;
+    width: 100%;
+    background-image: url(Beige\ Fashion\ Minimalist\ Presentation.jpg);
+    background-size: cover;
+}
+.btn1 i{
+    color: black;
+    font-size: 28px;
+    font-weight: 700;
+    position: absolute;
+    left: 15px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.sidemenu{
+    background-color: #545456;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    box-shadow: 0px 0px 5px black;
+    left: -300px;
+    transition: all 0.3s linear;
+    opacity: 0.9;
+    border-radius: 2px;
+}
+
+.sidemenu .logo {
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    box-shadow: 0px 2px 2px black
+    
+   
+}
+.sidemenu .logo a{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    left: 30px;
+    font-size: 25px;
+    text-shadow: 4px 4px 5px black;
+    font-weight: 500;
+
+}
+.sidemenu .btn2 i{
+    color: grey;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.sidemenu .menuoption{
+    position: absolute;
+    color: white;
+    width: 100%;
+    top: 60px;
+}
+.sidemenu .menuoption li{
+    margin-top: 10px;
+    padding: 12px 12px;
+}
+.sidemenu .menuoption i,a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px black;
+    transition: all 0.2s linear;
+}
+.sidemenu .menuoption i{
+    padding-right: 10px;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+.sidemenu .social_media{
+    position: absolute;
+    left: 25%;
+    bottom: 90px;
+}
+.sidemenu .social_media i{
+    color: white;
+    opacity: 0.5;
+    padding: 0px 10px;
+    text-shadow: 2px 2px 2px black;
+    transition: all 0.2s linear;
+    font-weight: 600;
+}
+
+#check{
+    display: none;
+}
+
+.sidemenu .menuoption li:hover{
+    box-shadow: 0px 0px 8px rgba(255,255,255, 0.5);
+
+}
+
+.btn1 i:hover{
+font-size: 40px;
+text-shadow: 0px 0px 8px whitesmoke;
+}
+
+.btn2 i:hover{
+    font-size: 30px;
+    text-shadow: 0px 0px 5px whitesmoke;
+}
+.sidemenu .social_media i:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+#check:checked ~ .sidemenu{
+left: 0;
+}
+#check:checked ~ .btn1 i{
+    opacity: 0;
+
+}
+.sidemenu .menuoption i,a:hover{
+    font-size: 20px;
+}
